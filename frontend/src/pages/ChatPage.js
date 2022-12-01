@@ -87,10 +87,10 @@ function ChatPage(props) {
     socket.emit("setup", userProfile);
     socket.on("connected", () => {
       // setSocketConnect(true);
-      socket.on("hello world", () => console.log("hello world"));
+      socket.on("hello world", () => {});
     });
   }, [userProfile, socket]);
-  socket.on("hello world", () => console.log("hello world"));
+  socket.on("hello world", () => {});
 
   let myChats;
   if (loading) myChats = <Loader />;

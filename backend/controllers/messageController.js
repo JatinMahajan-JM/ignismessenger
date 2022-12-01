@@ -30,7 +30,7 @@ exports.sendMessage = errHandler(async (req, res, next) => {
 });
 
 exports.getAllMessage = errHandler(async (req, res, next) => {
-  console.log(req.params.chatId);
+  // console.log(req.params.chatId);
   let messages = await messageModel
     .find({ chat: req.params.chatId })
     .populate("sender", "name pic email")

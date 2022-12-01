@@ -23,7 +23,7 @@ exports.getChat = errHandler(async (req, res, next) => {
   if (chat.length > 0) {
     res.status(200).json({ chat });
   } else {
-    console.log("else");
+    // console.log("else");
     let chatData = {
       chatName: "sender",
       isGroupChat: false,
@@ -32,11 +32,11 @@ exports.getChat = errHandler(async (req, res, next) => {
 
     const createdChat = new chatModel(chatData);
     await createdChat.save();
-    console.log(createdChat);
+    // console.log(createdChat);
     const fullChat = await chatModel
       .findOne({ _id: createdChat._id })
       .populate("users", "-password");
-    console.log(fullChat);
+    // console.log(fullChat);
     res.status(200).json({ fullChat });
   }
 });

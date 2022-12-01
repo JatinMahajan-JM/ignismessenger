@@ -107,7 +107,7 @@ export async function sendMessage(messageData) {
     body: JSON.stringify({ ...messageData }),
   });
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
   socket.emit("new message", data.message);
   return data.message;
 }
