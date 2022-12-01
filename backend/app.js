@@ -24,9 +24,9 @@ app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
 
-app.use((req, res, next) => {
-  next(new Error("Url not found"));
-});
+// app.use((req, res, next) => {
+//   next(new Error("Url not found"));
+// });
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(path.resolve(), "/frontend/build")));
