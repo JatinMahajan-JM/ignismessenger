@@ -18,6 +18,7 @@ const { Server } = require("socket.io");
 module.exports = {
   init: (server) => {
     // io = new Server(server, { cors: { origin: "http://localhost:3000" } });
+
     io = new Server(server, {
       cors: { origin: "https://ignismessenger.vercel.app/" },
     });
