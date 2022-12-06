@@ -41,6 +41,14 @@ function App() {
     if (signUpData !== null) setAuthentication(signUpData);
   }, [signUpData, setAuthentication]);
 
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+  window.addEventListener("resize", () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  });
+
   let routes = (
     <Routes>
       <Route path="/" element={<Login onLogin={exeLogin} err={loginErr} />} />

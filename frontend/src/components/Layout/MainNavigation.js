@@ -9,7 +9,8 @@ function MainNavigation({ onSet, children, onLogout }) {
   const { userProfile } = loginCtx;
   return (
     <div className="flex flex-col w-full font-PS">
-      <div className="flex justify-between items-center p-4 px-6 bg-[#36404a] text-[#a6b0cf] h-[8.5vh] md:px-12 lg:px-12">
+      {/* <div className="flex justify-between items-center p-4 px-6 bg-[#36404a] text-[#a6b0cf] h-[8.5vh] md:px-12 lg:px-12"> */}
+      <div className="flex justify-between items-center p-4 px-6 bg-[#36404a] text-[#a6b0cf] h8 md:px-12 lg:px-12">
         <div
           className="bg-[#3e4a56] p-2 rounded-lg cursor-pointer"
           onClick={() => onSet((prev) => !prev)}

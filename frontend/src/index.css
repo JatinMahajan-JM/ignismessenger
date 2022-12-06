@@ -54,4 +54,36 @@
   .invalid {
     @apply border-[red];
   }
+
+  .h100 {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .h91 {
+    height: calc(var(--vh, 1vh) * 91.5);
+  }
+
+  .h91s {
+    height: calc(var(--vh, 1vh) * 91);
+  }
+
+  .flex9 {
+    flex: 0 0 calc(var(--vh, 1vh) * 9.108);
+  }
+
+  .top8 {
+    top: calc(var(--vh, 1vh) * 8.5);
+  }
+
+  .flex728 {
+    flex: 0 0 calc(var(--vh, 1vh) * 72.864);
+  }
+
+  .flex9108 {
+    flex: 0 0 calc(var(--vh, 1vh) * 9.108);
+  }
+
+  .h8 {
+    height: calc(var(--vh, 1vh) * 8.5);
+  }
 }

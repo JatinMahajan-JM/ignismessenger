@@ -108,13 +108,15 @@ function ChatPage(props) {
     );
   }
   return (
-    <div className="h-[91.5vh] lg:flex block">
+    // <div className="h-[91.5vh] lg:flex block">
+    <div className="h91 lg:flex block">
       <SideBar
         onAdd={createNewChat}
         searchToggle={props.searchToggle}
         onSuccess={props.onSuccess}
       />
-      <div className="flex-1 bg-an-1 text-an-text lg:p-8 md:p-8 p-6 flex flex-col lg:h-[auto] h-[91.5vh]">
+      {/* <div className="flex-1 bg-an-1 text-an-text lg:p-8 md:p-8 p-6 flex flex-col lg:h-[auto] h-[91.5vh]"> */}
+      <div className="flex-1 bg-an-1 text-an-text lg:p-8 md:p-8 p-6 flex flex-col lg:h-[auto] h91">
         {myChats}
       </div>
       {chatId && chatInfo && (

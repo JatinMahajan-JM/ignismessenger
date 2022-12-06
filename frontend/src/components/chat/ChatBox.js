@@ -126,12 +126,18 @@ function ChatBox({
   }, [socket, chatInfo, setChats]);
 
   return (
+    // <div
+    //   className={`flex-[3_3_0%] bg-an-2 text-an-text grid grid-rows-[1fr_7fr_1fr] lg:grid lg:static fixed lg:w-auto w-full top-[8.5vh] h-[91.5vh] ${
+    //     toggle ? "" : "translate-x-full"
+    //   } ease-in-out duration-500 lg:translate-x-0`}
+    // >
     <div
-      className={`flex-[3_3_0%] bg-an-2 text-an-text grid grid-rows-[1fr_7fr_1fr] lg:grid lg:static fixed lg:w-auto w-full top-[8.5vh] h-[91.5vh] ${
+      className={`flex-[3_3_0%] bg-an-2 text-an-text grid grid-rows-[1fr_7fr_1fr] lg:grid lg:static fixed lg:w-auto w-full top8 h91 ${
         toggle ? "" : "translate-x-full"
       } ease-in-out duration-500 lg:translate-x-0`}
     >
-      <div className="flex-[0_0_9.108vh]">
+      {/* <div className="flex-[0_0_9.108vh]"> */}
+      <div className="flex9">
         <div className="flex justify-between py-6 border-b px-10 border-an-light items-center">
           <div className="flex items-center">
             <svg
@@ -233,10 +239,12 @@ function ChatBox({
           </div>
         )}
       </div>
-      <div className="lg:p-10 md:p-10 p-5 flex-[0_0_72.864vh] overflow-y-scroll scrollbar flex flex-col-reverse pr-0">
+      {/* <div className="lg:p-10 md:p-10 p-5 flex-[0_0_72.864vh] overflow-y-scroll scrollbar flex flex-col-reverse pr-0"> */}
+      <div className="lg:p-10 md:p-10 p-5 flex728 overflow-y-scroll scrollbar flex flex-col-reverse pr-0">
         {messages}
       </div>
-      <div className="px-10 flex-[0_0_9.108vh] border-an-light border-t py-6">
+      {/* <div className="px-10 flex-[0_0_9.108vh] border-an-light border-t py-6"> */}
+      <div className="px-10 flex9108 border-an-light border-t py-6">
         <form onSubmit={sendMessageData} className="flex">
           <textarea
             rows="1"

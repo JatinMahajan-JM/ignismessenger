@@ -45,8 +45,13 @@ function SideBar({ onAdd, searchToggle }) {
     }
   }, [loadingS, dataS, onAdd]);
   return (
+    // <div
+    //   className={`absolute h-[91vh] bg-[#303841] text-white p-6 px-14 ease-in-out duration-300 z-50 ${
+    //     searchToggle ? "" : "-translate-x-full"
+    //   }`}
+    // >
     <div
-      className={`absolute h-[91vh] bg-[#303841] text-white p-6 px-14 ease-in-out duration-300 z-50 ${
+      className={`absolute h91s bg-[#303841] text-white p-6 px-14 ease-in-out duration-300 z-50 ${
         searchToggle ? "" : "-translate-x-full"
       }`}
     >
