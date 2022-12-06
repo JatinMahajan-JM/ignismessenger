@@ -3,7 +3,7 @@ import io from "socket.io-client";
 // const url = "http://localhost:8080";
 const url = "";
 const url2 = "https://ignismessenger.vercel.app/";
-const socket = io(url2);
+const socket = io(url2); //change this to url2 in the production stage
 
 export async function login(loginData) {
   const res = await fetch(`${url}/api/user/login`, {

@@ -5,6 +5,13 @@ body {
   background-color: #36404a;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
 ul {
   padding: 0;
 }
